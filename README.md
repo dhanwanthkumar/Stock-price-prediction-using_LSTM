@@ -4,7 +4,7 @@
 This project aims to predict stock prices using machine learning techniques. It utilizes historical stock market data to train predictive models that forecast future price movements.
 
 ## Dataset
-The dataset used in this project is obtained from [source], which includes historical stock prices and relevant features such as volume, opening price, closing price, etc.
+The dataset used in this project is obtained from nseindia.com, which includes historical stock prices and relevant features such as volume, opening price, closing price, etc.
 
 ## Methodology
 The project follows these steps:
