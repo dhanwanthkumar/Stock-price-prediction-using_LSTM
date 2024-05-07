@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, LSTM, Dense
 
-stock_data = pd.read_csv("C://Users//anasa//OneDrive//Desktop//dataset.csv")
+stock_data = pd.read_csv("dataset.csv")
 
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(stock_data['Close'].values.reshape(-1, 1))
