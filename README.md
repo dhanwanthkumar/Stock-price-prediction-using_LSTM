@@ -15,15 +15,16 @@ The project follows these steps:
 - Testing the Models: Test the trained models on the testing dataset to assess their accuracy and effectiveness in predicting stock prices.
 
 ## Explanation
-##### Calculate the Simple Moving Average (SMA)
+##### Calculate the Simple Moving Average (SMA) and Compare
+First, let’s define the function to calculate SMAs and load the historical data.
+The SMA is the average of the closing prices over a specified period. For instance, if you want to calculate a **20-day SMA**, you sum up the closing prices of the last 20 days and divide by 20. If you want to calculate a **50-day SMA**, you sum up the closing prices of the last 50 days and divide by 50.
 
-The SMA is the average of the closing prices over a specified period. For instance, if you want to calculate a **20-day SMA**, you sum up the closing prices of the last 20 days and divide by 20.
-##### Find Points of Intersection
+##### Find SMA & Points of Intersection
 
 Identify the points where the historical price data intersects with the SMA. These points are potential buy or sell signals.
 <div style= "display: flex; justify-content: space-evenly;">
+    <img src="Screenshots/SMA_crossover.png.png" style= "width:47% ;height:100%">
     <img src="Screenshots/points_of_intersection.png" style= "width:47% ;height:100%">
-    <img src="Screenshots/points_of_intersection_with_dots.png" style= "width:47% ;height:100%">
 </div>
 
 This function checks the conditions where the historical data crosses the SMA. If the price crosses above the SMA, it signals a buy. If the price crosses below the SMA, it signals a sell.
@@ -32,12 +33,8 @@ This function checks the conditions where the historical data crosses the SMA. I
 
 Once the intersections are identified, mark them accordingly.
 <div style= "display: flex; justify-content: space-evenly;">
-    <div>
-        <img src="Screenshots/buy_or_sell.png" style= "width:80% ;height:100%">
-    </div>
-    <div>
-        <p>After finding the intersections, this section of the code marks these points on a plot to visualize the buy and sell signals.</p>
-    </div>
+    <img src="Screenshots/points_of_intersection_with_dots.png" style= "width:47% ;height:100%">
+    <img src="Screenshots/buy_or_sell.png" style= "width:47% ;height:100%">
 </div>
 
 ---
