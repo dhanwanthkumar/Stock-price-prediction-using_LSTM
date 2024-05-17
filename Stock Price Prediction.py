@@ -1,4 +1,5 @@
 import numpy as np
+import sequence
 import pandas as pd
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -13,15 +14,7 @@ scaled_data = scaler.fit_transform(stock_data['Close'].values.reshape(-1, 1))
 
 window_size = 10
 
-def create_sequences(data, window_size):
-    X = []
-    y = []
-    for i in range(len(data) - window_size):
-        X.append(data[i:i+window_size])
-        y.append(data[i+window_size])
-    return np.array(X), np.array(y)
-
-X, y = create_sequences(scaled_data, window_size)
+X, y = sequence.create_sequences(scaled_data, window_size)
 
 split = int(0.8 * len(X))
 X_train, X_test = X[:split], X[split:]
