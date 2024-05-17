@@ -33,7 +33,7 @@ This function checks the conditions where the historical data crosses the SMA. I
 Once the intersections are identified, mark them accordingly.
 <div style= "display: flex; justify-content: space-evenly;">
     <div>
-        <img src="Screenshots/buy_or_sell.png" style= "width:10% ;height:100%">
+        <img src="Screenshots/buy_or_sell.png" style= "width:100% ;height:100%">
     </div>
     <div>
         <p>After finding the intersections, this section of the code marks these points on a plot to visualize the buy and sell signals.</p>
