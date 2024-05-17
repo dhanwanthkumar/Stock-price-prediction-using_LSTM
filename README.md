@@ -22,8 +22,8 @@ The SMA is the average of the closing prices over a specified period. For instan
 
 Identify the points where the historical price data intersects with the SMA. These points are potential buy or sell signals.
 <div style= "display: flex; justify-content: space-evenly;">
-    <img src="Screenshots/points_of_intersection.png" style= "width:50% ;height:100%">
-    <img src="Screenshots/points_of_intersection_with_dots.png" style= "width:50% ;height:100%">
+    <img src="Screenshots/points_of_intersection.png" style= "width:45% ;height:100%">
+    <img src="Screenshots/points_of_intersection_with_dots.png" style= "width:45% ;height:100%">
 </div>
 
 This function checks the conditions where the historical data crosses the SMA. If the price crosses above the SMA, it signals a buy. If the price crosses below the SMA, it signals a sell.
